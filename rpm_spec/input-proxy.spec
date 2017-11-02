@@ -2,6 +2,8 @@
 %if 0%{?qubes_builder}
 %define _builddir %(pwd)
 %endif
+
+%define debug_package %{nil}
     
 Name:		qubes-input-proxy
 Version:	%{version}
