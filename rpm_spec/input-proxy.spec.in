@@ -10,8 +10,13 @@ URL:		https://www.qubes-os.org/
 
 BuildRequires:	gcc
 BuildRequires:	kernel-headers
+%if 0%{?centos} == 7
 BuildRequires:	python-setuptools
 BuildRequires:	python-devel
+%else
+BuildRequires:	python2-setuptools
+BuildRequires:	python2-devel
+%endif
 BuildRequires:	python%{python3_pkgversion}-setuptools
 BuildRequires:	python%{python3_pkgversion}-devel
 
